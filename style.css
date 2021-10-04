@@ -18,6 +18,28 @@ img {
     display: block;
 }
 
+.about h2,
+.about h3 {
+    color: #143774;
+    font-weight: 400;
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 0.7em;
+}
+
+.about h2 {
+    font-size: 1.7rem;  
+}
+
+.about h3 {
+    color: #1792d2;
+    font-size: 1.4rem;
+}
+
+.about p {
+    font-size: 1.15rem;
+    margin-bottom: 0.7em;
+}
+
 .title {
     margin-bottom: 1em;
 }
@@ -111,7 +133,7 @@ img {
 
 .article-body {
     font-size: 1.125rem;
-    color: #707070;
+    color: #000000;
     margin: 1em 0;
 }
 
@@ -144,13 +166,10 @@ img {
     order: -1;
 }
 
-.sidebar {
-    margin-bottom: 2em;
-}
-
 .sidebar-widget {
     border: 15px solid #f1f1f1;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 .article-recent {
@@ -167,6 +186,12 @@ img {
     order: 1;
 }
 
+.image-full {
+    width: 100%;
+    max-height: 250px;
+    object-fit:cover;
+    margin-bottom: 1em;
+}
 
 /* Footer */
 
@@ -178,6 +203,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding: 0.5em;
+}
+
 /* Media queries */
 
 @media (min-width: 675px) {
@@ -186,10 +215,75 @@ footer {
     }
 
     main {
-        width: 75%;
+        width: 70%;
     }
 
     aside {
-        width: 22%;
+        width: 25%;
+    }
+
+    .nav-list {
+        flex-direction: row;
+    }
+
+    .nav-list li {
+        margin-left: 1.5em;
+    }
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-primary {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        min-height: 250px;
+        object-fit: cover;
+    }
+
+    .article-recent:last-child .article-image {
+        object-position: left;
+    }
+
+    .widget-title {
+        color: #143774;
+        font-size: 1rem;
+        margin-bottom: 1em;
+    }
+
+    .widget-body {
+        margin: 1em 0;
+        font-size: 1.1rem;
+    }
+
+    .widget-post-title {
+        color: #143774;
+        font-size: 1rem;
+        font-family: 'Lora', sans-serif;
+        font-weight: 400;
+    }
+
+    .widget-recent-post {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #707070;
+    }
+
+    .widget-recent-post:last-child {
+        margin: 0;
+        border: none;
+    }
+
+    .widget-img {
+        order: -1;
     }
 }
