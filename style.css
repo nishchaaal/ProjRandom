@@ -208,7 +208,7 @@ header .container-flex {
 /* Footer */
 
 footer {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.6);
     background-color: #143774;
     padding: 4em;
     font-family: 'Ubuntu', sans-serif;
