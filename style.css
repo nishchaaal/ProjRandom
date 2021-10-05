@@ -74,9 +74,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
+}
+
+header .container-flex {
+    align-items: center;
 }
 
 
